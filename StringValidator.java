@@ -5,7 +5,7 @@ import java.util.ArrayDeque;
 public class StringValidator {
 	
 	public static final String VALIDATION_FAILED_OUTPUT = "Validation failed\nMake sure your input" 
-									 + " isn\'t empty and includes characters except forbidden ones, then retry it";
+									 + " isn\'t empty and includes characters except forbidden ones, then try it again";
 	public static final String VALIDATION_SUCCESS_OUTPUT = "Validation is complete with success";
 	
 	public static void main(String [] args) {
@@ -29,7 +29,9 @@ public class StringValidator {
 		char charAtPoint;
 				
 		for (int i = 0; i < str.length(); i++) {
+			
 			charAtPoint = str.charAt(i);
+			
 			if (charAtPoint < 48 || charAtPoint > 122 || (charAtPoint >= 58 && charAtPoint <= 64)) {
 				System.out.print(VALIDATION_FAILED_OUTPUT);
 				return;
