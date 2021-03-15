@@ -21,8 +21,7 @@ public class StringExpander {
         String temp = "";
 		String result = ""; 
        
-        for (int i = 0; i < str.length(); i++) 
-        { 
+        for (int i = 0; i < str.length(); i++) { 
             int count = 0;        
            
             if (Character.isDigit(str.charAt(i))) { 
